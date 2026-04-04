@@ -1,0 +1,26 @@
+<<<<<<< HEAD
+# Flutter / Dart
+.dart_tool/
+.packages
+build/
+
+# Android
+.gradle/
+local.properties
+
+# iOS
+Pods/
+
+# IDE
+.idea/
+.vscode/
+
+# Mac/Linux temp
+.DS_Store
+
+# Python
+venv/
+__pycache__/
+=======
+venv/
+>>>>>>> e31c6cf8

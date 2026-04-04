@@ -1,0 +1,7 @@
+ngrok config add-authtoken 3Bh1eOsHRohlyGyq9QxtkNUdt6P_25k1azac5i1PVPLcro1gt
+
+version: 3
+agent:
+  authtoken: 3Bh1eOsHRohlyGyq9QxtkNUdt6P_25k1azac5i1PVPLcro1gt
+
+export NGROK_AUTHTOKEN=3Bh1eOsHRohlyGyq9QxtkNUdt6P_25k1azac5i1PVPLcro1gt
