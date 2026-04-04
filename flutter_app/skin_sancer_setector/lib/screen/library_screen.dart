@@ -248,7 +248,7 @@ class _LibraryScreenState extends State<LibraryScreen>
                           fontWeight: FontWeight.w800, letterSpacing: -0.5,
                         )),
                     const SizedBox(height: 4),
-                    Text("Understanding the different diagnoses",
+                    Text("",
                         style: TextStyle(color: _C.textSub, fontSize: 13)),
                   ],
                 ),
