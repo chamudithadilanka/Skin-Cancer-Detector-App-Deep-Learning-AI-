@@ -38,11 +38,9 @@ class _MainScreenWithNavigationState extends State<MainScreenWithNavigation> {
 
   Widget _buildBottomNavBar() {
     return Container(
-<<<<<<< HEAD
+
       margin: const EdgeInsets.fromLTRB(20, 0, 20, 35), // Floating effect
-=======
-      margin: const EdgeInsets.fromLTRB(20, 0, 20, 25), // Floating effect
->>>>>>> e31c6cf8
+
       height: 78,
       decoration: BoxDecoration(
         gradient: LinearGradient(
