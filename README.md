@@ -1,6 +1,3 @@
-Perfect! Here's your **complete updated README** with all the new additions including the **Dermatology-Grade Image Capture section** and **Contact with phone number**:
-
----
 
 # 📱 Skin Cancer Detector AI App
 
