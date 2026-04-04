@@ -1,7 +1,3 @@
-Here's a beautifully formatted version of your **Skin Cancer Detector AI App** README, designed for clarity, visual appeal, and easy navigation.
-
----
-
 # 📱 Skin Cancer Detector AI App
 
 > *AI-powered mobile assistant for preliminary skin lesion analysis*
@@ -72,8 +68,8 @@ Skin-Cancer-Detector/
 ### 🔹 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Skin-Cancer-Detector.git
-cd Skin-Cancer-Detector
+git clone https://github.com/chamudithadilanka/Skin-Cancer-Detector-App-Deep-Learning-AI-.git
+cd Skin-Cancer-Detector-App-Deep-Learning-AI-
 ```
 
 ### 🔹 2. Backend Setup (Flask)
@@ -125,28 +121,7 @@ flutter run
 
 ---
 
-## 🌍 Deploy Backend (FREE)
-
-Make your API accessible globally:
-
-| Platform | Link | Difficulty |
-|----------|------|------------|
-| 🚀 **Render** (Recommended) | [render.com](https://render.com) | Easy |
-| 🚆 Railway | [railway.app](https://railway.app) | Easy |
-
-### 📋 Render Deployment Steps
-
-1. Push code to GitHub
-2. Go to [render.com](https://render.com)
-3. Create a **Web Service**
-4. Connect your repo
-5. Set:
-   - **Build Command:** `pip install -r requirements.txt`
-   - **Start Command:** `python app.py`
-
-✅ You'll get: `https://your-app.onrender.com`
-
-### 🔗 Connect Flutter to API
+### 🔗 Connect Flutter to API Config File
 
 Replace local URL in your Flutter code:
 
@@ -174,10 +149,116 @@ curl -X POST -F "file=@image.jpg" http://127.0.0.1:5000/predict
 
 ```json
 {
-  "prediction": "nv",
-  "confidence": 0.94,
-  "risk_level": "Low",
-  "description": "Melanocytic Nevi - Common mole, typically benign"
+  "success": true,
+  "prediction": {
+    "class_key": "mel",
+    "name": "Melanoma",
+    "confidence": 68.7,
+    "risk": "high",
+    "risk_color": "red",
+    "risk_label": "HIGH RISK — Urgent medical attention needed"
+  },
+  "top3": [
+    {
+      "class_key": "mel",
+      "name": "Melanoma",
+      "confidence": 68.7
+    },
+    {
+      "class_key": "bkl",
+      "name": "Benign Keratosis",
+      "confidence": 29.0
+    },
+    {
+      "class_key": "nv",
+      "name": "Melanocytic Nevi",
+      "confidence": 1.8
+    }
+  ],
+  "disease_info": {
+    "what_is_it": "Melanoma is the most dangerous form of skin cancer. It starts in the melanocytes — the cells that give skin its colour. It can spread to other organs if not caught early. Early detection gives a 98% survival rate. Late detection drops to 23%.",
+    "symptoms": [
+      "Asymmetrical mole — one half does not match the other",
+      "Irregular, ragged, or blurred border",
+      "Multiple colours in one lesion (brown, black, red, white, blue)",
+      "Diameter larger than 6mm (bigger than a pencil eraser)",
+      "Evolving — changing in size, shape, or colour over weeks",
+      "Itching, bleeding, or crusting of an existing mole",
+      "A new growth that looks different from your other moles"
+    ],
+    "home_care": [
+      "Do NOT attempt any home treatment — this is serious",
+      "Do not scratch, pick, or irritate the area",
+      "Cover loosely with a clean bandage if it is bleeding",
+      "Apply SPF 50+ sunscreen to surrounding skin daily",
+      "Take clear photos of the lesion every 2–3 days to track changes",
+      "Avoid all sun exposure on the affected area",
+      "Write down when you first noticed it and any changes since"
+    ],
+    "treatments": [
+      {
+        "name": "Surgical excision",
+        "type": "First-line treatment",
+        "description": "The melanoma and surrounding tissue are surgically removed. This is the primary treatment for early-stage melanoma.",
+        "done_by": "Dermatologist or surgeon"
+      },
+      {
+        "name": "Sentinel lymph node biopsy",
+        "type": "Staging procedure",
+        "description": "Checks if the cancer has spread to nearby lymph nodes. Guides further treatment decisions.",
+        "done_by": "Surgical oncologist"
+      },
+      {
+        "name": "Immunotherapy",
+        "type": "Advanced stage treatment",
+        "description": "Drugs like pembrolizumab or nivolumab boost your immune system to fight cancer cells.",
+        "done_by": "Oncologist"
+      },
+      {
+        "name": "Targeted therapy",
+        "type": "Advanced stage treatment",
+        "description": "If BRAF mutation is present, drugs like vemurafenib target the specific mutation.",
+        "done_by": "Oncologist"
+      },
+      {
+        "name": "Radiation therapy",
+        "type": "Supplementary treatment",
+        "description": "Used when surgery is not possible or cancer has spread to brain or bones.",
+        "done_by": "Radiation oncologist"
+      }
+    ]
+  },
+  "doctor_advice": {
+    "urgency_level": "urgent",
+    "urgency": "Book an appointment within 48–72 hours",
+    "specialist": "Dermatologist → Surgical Oncologist",
+    "what_to_say": "Tell the doctor: 'I have a changing mole that may be melanoma. I need an urgent skin biopsy.'",
+    "tests_expect": [
+      "Dermoscopy (magnified skin examination)",
+      "Skin punch biopsy (tissue sample sent to lab)",
+      "Full body skin check",
+      "Lymph node ultrasound if biopsy confirms melanoma"
+    ],
+    "questions_to_ask": [
+      "What stage is this melanoma?",
+      "Has it spread to any lymph nodes?",
+      "What are my treatment options?",
+      "What are the survival statistics for my case?",
+      "Do I need a referral to an oncologist?"
+    ]
+  },
+  "emergency_signs": [
+    "The lesion is actively bleeding and will not stop",
+    "Rapid increase in size over days",
+    "Severe pain in the affected area",
+    "Swollen lymph nodes in armpit, groin, or neck",
+    "Unexplained weight loss alongside the skin changes"
+  ],
+  "flags": {
+    "see_doctor": true,
+    "see_emergency": false
+  },
+  "disclaimer": "This app is for educational purposes only and is NOT a substitute for professional medical advice. Always consult a qualified dermatologist for proper diagnosis and treatment."
 }
 ```
 
@@ -191,6 +272,16 @@ curl -X POST -F "file=@image.jpg" http://127.0.0.1:5000/predict
 | Input Size | 224 × 224 pixels |
 | Dataset | HAM10000 |
 | Classes | 7 skin conditions |
+
+---
+
+## 📸 Screenshots
+
+> *Add your app screenshots here*
+
+| Home Screen | Prediction Result |
+|-------------|-------------------|
+| ![Home](link-to-your-screenshot) | ![Result](link-to-your-screenshot) |
 
 ---
 
@@ -231,9 +322,12 @@ If you find this project useful:
 
 ---
 
-## 📞 Contact
+## 📞 Contact 0763359921
 
 **Created by Chamuditha Dilanka**
+
+- GitHub: [@chamudithadilanka](https://github.com/chamudithadilanka)
+- Project Link: [https://github.com/chamudithadilanka/Skin-Cancer-Detector-App-Deep-Learning-AI-](https://github.com/chamudithadilanka/Skin-Cancer-Detector-App-Deep-Learning-AI-)
 
 ---
 
@@ -246,3 +340,5 @@ This project is open-source and available under the MIT License.
 <div align="center">
   <sub>Built with ❤️ for better health awareness</sub>
 </div>
+
+---
