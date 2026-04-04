@@ -36,7 +36,7 @@ This project is a **Skin Cancer Detection Mobile App** built with a modern tech 
 
 ## 📸 Dermatology-Grade Image Capture Or Already Have Image can Predict (HIGHLY RECOMMENDED)
 
-![South-Coast-Dermatology-40-e1731379628218-1024x741](https://github.com/user-attachments/assets/4f60ac44-eb7a-4fc5-96aa-f5deb9ea2f5a)
+![skynews-skinanalytics-mole_6887989](https://github.com/user-attachments/assets/3fba6221-1f4a-4f61-ab31-b452ffd69d30)
 
 > ⭐ **For the most accurate predictions, follow these dermatologist-approved guidelines**
 
