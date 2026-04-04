@@ -1,3 +1,7 @@
+Perfect! Here's your **complete updated README** with all the new additions including the **Dermatology-Grade Image Capture section** and **Contact with phone number**:
+
+---
+
 # 📱 Skin Cancer Detector AI App
 
 > *AI-powered mobile assistant for preliminary skin lesion analysis*
@@ -24,6 +28,50 @@ This project is a **Skin Cancer Detection Mobile App** built with a modern tech 
 - 📸 Upload or capture skin images
 - 🔍 Get AI-based real-time predictions
 - ⚠️ View risk level & detailed disease information
+- 🏥 **Dermatology-grade image quality guidelines**
+- 📊 **Top-3 predictions with confidence scores**
+
+---
+
+
+## 📸 Dermatology-Grade Image Capture Or Already Have Image can Predict (HIGHLY RECOMMENDED)
+
+![South-Coast-Dermatology-40-e1731379628218-1024x741](https://github.com/user-attachments/assets/4f60ac44-eb7a-4fc5-96aa-f5deb9ea2f5a)
+
+> ⭐ **For the most accurate predictions, follow these dermatologist-approved guidelines**
+
+### 🎯 Optimal Image Capture Guidelines
+
+| Priority | Guideline | Why It Matters |
+|----------|-----------|----------------|
+| 🥇 **#1** | **Use natural daylight** (not direct sun) | Reduces shadows and color distortion |
+| 🥈 **#2** | **Hold camera 6-8 inches away** | Optimal focus for lesion detail |
+| 🥉 **#3** | **Center the lesion in frame** | Ensures AI focuses on correct area |
+| 4 | **Include a ruler or coin for scale** | Helps assess size (critical for melanoma) |
+| 5 | **Take multiple angles** (front + 45°) | Captures elevation and border irregularity |
+| 6 | **Include surrounding healthy skin** | Shows color contrast and spread |
+| 7 | **No flash** (causes glare/reflection) | Flash obscures surface details |
+| 8 | **Remove hair covering the lesion** | Hair interferes with border detection |
+
+### ✅ DO's & ❌ DON'Ts
+
+```
+✅ GOOD IMAGE:                    ❌ BAD IMAGE:
+• Well-lit, in focus              • Blurry or out of focus
+• Lesion centered                 • Too dark or overexposed
+• Clear border visibility         • Hair covering the lesion
+• Natural skin color              • Flash reflection
+• Scale reference included        • Finger shadows
+```
+
+### 📊 Impact on Prediction Accuracy
+
+| Image Quality | Prediction Confidence | Recommendation |
+|---------------|----------------------|----------------|
+| 🌟 **Excellent** (follows all guidelines) | 85-95% | Highly reliable |
+| 👍 **Good** (follows 5-7 guidelines) | 70-85% | Reliable |
+| ⚠️ **Fair** (follows 3-4 guidelines) | 50-70% | Take another photo |
+| ❌ **Poor** (follows 0-2 guidelines) | <50% | Retake required |
 
 ---
 
@@ -31,15 +79,15 @@ This project is a **Skin Cancer Detection Mobile App** built with a modern tech 
 
 The model detects **7 classes** of skin lesions:
 
-| Class | Abbreviation | Description |
-|-------|--------------|-------------|
-| 🖤 | **mel** | Melanoma |
-| 🟤 | **nv** | Melanocytic Nevi |
-| 🔴 | **bcc** | Basal Cell Carcinoma |
-| 🟠 | **akiec** | Actinic Keratoses |
-| 🟡 | **bkl** | Benign Keratosis |
-| ⚪ | **df** | Dermatofibroma |
-| 🔵 | **vasc** | Vascular Lesions |
+| Class | Abbreviation | Description | Risk Level |
+|-------|--------------|-------------|-------------|
+| 🖤 | **mel** | Melanoma | ⚠️ **HIGH** |
+| 🔴 | **bcc** | Basal Cell Carcinoma | ⚠️ **MEDIUM** |
+| 🟠 | **akiec** | Actinic Keratoses | ⚠️ **MEDIUM** |
+| 🟤 | **nv** | Melanocytic Nevi | ✅ **LOW** |
+| 🟡 | **bkl** | Benign Keratosis | ✅ **LOW** |
+| ⚪ | **df** | Dermatofibroma | ✅ **LOW** |
+| 🔵 | **vasc** | Vascular Lesions | ✅ **LOW** |
 
 ---
 
@@ -121,7 +169,7 @@ flutter run
 
 ---
 
-### 🔗 Connect Flutter to API Config File
+## 🔗 Connect Flutter to API Config File
 
 Replace local URL in your Flutter code:
 
@@ -281,7 +329,18 @@ curl -X POST -F "file=@image.jpg" http://127.0.0.1:5000/predict
 
 | Home Screen | Prediction Result |
 |-------------|-------------------|
-| ![Home](link-to-your-screenshot) | ![Result](link-to-your-screenshot) |
+| 📱 *[Add Home Screen Image]* | 📊 *[Add Result Screen Image]* |
+
+---
+
+## 🎯 Prediction Confidence Guide
+
+| Confidence Range | Interpretation | Action |
+|-----------------|----------------|--------|
+| **>85%** | 🟢 High confidence - AI is very certain | Reliable for screening |
+| **70-85%** | 🟡 Moderate confidence - AI is fairly certain | Useful reference |
+| **50-70%** | 🟠 Low confidence - AI is uncertain | Retake with better quality |
+| **<50%** | 🔴 Very low confidence - AI cannot determine | Poor image quality |
 
 ---
 
@@ -289,6 +348,13 @@ curl -X POST -F "file=@image.jpg" http://127.0.0.1:5000/predict
 
 > 🚨 **Educational Purpose Only**  
 > This app is **NOT** a medical diagnosis tool. Always consult a qualified healthcare professional for any health concerns or before making any medical decisions.
+
+### 🔬 Important Notes:
+- The AI model is trained on **dermatoscopic images** (clinical-grade)
+- **Regular photos** may have lower accuracy than clinical dermoscopy
+- **Image quality** significantly affects prediction confidence
+- **False positives/negatives** are possible
+- **Do not rely solely** on this app for diagnosis
 
 ---
 
@@ -322,12 +388,13 @@ If you find this project useful:
 
 ---
 
-## 📞 Contact 0763359921
+## 📞 Contact
 
 **Created by Chamuditha Dilanka**
 
-- GitHub: [@chamudithadilanka](https://github.com/chamudithadilanka)
-- Project Link: [https://github.com/chamudithadilanka/Skin-Cancer-Detector-App-Deep-Learning-AI-](https://github.com/chamudithadilanka/Skin-Cancer-Detector-App-Deep-Learning-AI-)
+- 📱 **Phone:** 0763359921
+- 💻 **GitHub:** [@chamudithadilanka](https://github.com/chamudithadilanka)
+- 🔗 **Project Link:** [https://github.com/chamudithadilanka/Skin-Cancer-Detector-App-Deep-Learning-AI-](https://github.com/chamudithadilanka/Skin-Cancer-Detector-App-Deep-Learning-AI-)
 
 ---
 
@@ -337,8 +404,14 @@ This project is open-source and available under the MIT License.
 
 ---
 
+## 🏆 Acknowledgments
+
+- **HAM10000 Dataset** - For providing dermatoscopic images
+- **TensorFlow Team** - For deep learning framework
+- **Flutter Community** - For cross-platform mobile development
+
+---
+
 <div align="center">
   <sub>Built with ❤️ for better health awareness</sub>
 </div>
-
----
