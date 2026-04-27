@@ -1,4 +1,5 @@
 
+
 # 📱 Skin Cancer Detector AI App
 
  <p align="center">
@@ -10,6 +11,7 @@
 <p align="center">
   <img src="https://github.com/user-attachments/assets/3e0b19f0-eddd-4dcb-86ce-9559909cde8e" width="220" />
   <img src="https://github.com/user-attachments/assets/10ce3e94-55fb-4610-839a-83025ded4ef3" width="220" />
+ <img  src="https://github.com/user-attachments/assets/d4dde1cb-ba32-4e98-9085-6fbbe87f6064" width="220"/>
 </p>
 
 
