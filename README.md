@@ -1,5 +1,20 @@
-
+<img width="720" height="1600" alt="WhatsApp Image 2026-04-05 at 20 39 09 (4)" src="https://github.com/user-attachments/assets/c2b81474-f919-4920-a8b1-bbbf5bd96a59" />
 # 📱 Skin Cancer Detector AI App
+
+  <img width="720" height="1600" alt="WhatsApp Image 2026-04-05 at 20 39 09" src="https://github.com/user-attachments/assets/c060f65c-fea3-46de-a93a-be5412501038" />
+  
+  <img width="720" height="1600" alt="WhatsApp Image 2026-04-05 at 20 39 09 (1)" src="https://github.com/user-attachments/assets/c67bc781-1e67-4457-826f-6386c5db8850" />
+  
+  <img width="720" height="1600" alt="WhatsApp Image 2026-04-05 at 20 39 09 (3)" src="https://github.com/user-attachments/assets/13db4ac2-cfc7-46cb-8e7a-7763ae943ce5" />
+  
+  <img width="720" height="1600" alt="WhatsApp Image 2026-04-05 at 20 39 09 (2)" src="https://github.com/user-attachments/assets/3e0b19f0-eddd-4dcb-86ce-9559909cde8e" />
+  
+  <img width="720" height="1600" alt="WhatsApp Image 2026-04-05 at 20 39 09" src="https://github.com/user-attachments/assets/c060f65c-fea3-46de-a93a-be5412501038" />
+  
+  <img width="720" height="1600" alt="WhatsApp Image 2026-04-05 at 20 39 09 (5)" src="https://github.com/user-attachments/assets/10ce3e94-55fb-4610-839a-83025ded4ef3" />
+
+
+
 
 > *AI-powered mobile assistant for preliminary skin lesion analysis*
 
